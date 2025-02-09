@@ -1,7 +1,7 @@
 import { Outlet, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-import { useCallback, useEffect } from "react";
+import { useEffect } from "react";
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -13,7 +13,7 @@ const Body = () => {
   const navigate = useNavigate();
   const userData = useSelector((store) => store.user);
 
-  const fetchUser = useCallback(async () => {
+  const fetchUser = async () => {
     if (userData) return;
 
     try {
@@ -27,11 +27,11 @@ const Body = () => {
       }
       console.error(err);
     }
-  }, [userData, dispatch, navigate]);
+  };
 
   useEffect(() => {
     fetchUser();
-  }, [fetchUser]);
+  }, []);
 
   return (
     <div>
