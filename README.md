@@ -29,6 +29,13 @@
 - Show Toast message on save of profile
 - New Page - See all my connections
 - New Page - See all my connection requests
+- Feature: Accept and Reject connection requests
+
+Remaining:
+
+- Send/Ignore the user card from Feed
+- Signup New User
+- E2E Testing
 
 ## Component Design
 
