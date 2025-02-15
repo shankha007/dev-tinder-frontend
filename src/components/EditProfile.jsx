@@ -43,7 +43,7 @@ const EditProfile = ({ user }) => {
   return (
     <>
       {showToast && (
-        <div className="toast toast-top toast-center">
+        <div className="toast toast-top toast-center z-10">
           <div className="alert alert-success">
             <span>Profile was saved successfully.</span>
           </div>

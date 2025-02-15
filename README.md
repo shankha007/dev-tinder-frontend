@@ -30,12 +30,16 @@
 - New Page - See all my connections
 - New Page - See all my connection requests
 - Feature: Accept and Reject connection requests
-
-Remaining:
-
 - Send/Ignore the user card from Feed
 - Signup New User
+
+## TODO
+
 - E2E Testing
+- Bug Fix
+- Reload Feed when feed is empty
+- Add Skills
+- Add Project Links
 
 ## Component Design
 
